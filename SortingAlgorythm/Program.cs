@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortingAlgorythm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,40 +13,15 @@ namespace SortingAlgorithm
         {
             int[] array = { 64, 34, 25, 12, 22, 11, 13, 14, 15 };
 
+            Insertion_Sort sort = new Insertion_Sort();
             Console.WriteLine("Before Sorting");
-            PrintArray(array);
+            sort.PrintArray(array);
 
-            InsertionSort(array);
+            sort.InsertionSort(array);
             Console.WriteLine("After sorting");
-            PrintArray(array);
+            sort.PrintArray(array);
         }
 
-        static void InsertionSort(int[] array)
-        {
-            for(int i =1; i < array.Length; i++)
-            {
-                int key = array[i];
-                int j = i - 1;
-
-                while (j >=0 && array[j]> key)
-                {
-                    array[j + 1] = array[j];
-                    j = j - 1;
-                }
-                array[j +1] = key;
-            }
-
-        }
-
-        static void PrintArray(int[] array)
-        {
-            foreach(int i in array)
-            {
-                Console.Write(i + " ");
-
-            }
-            Console.WriteLine();
-
-        }
+       
     }
 }
