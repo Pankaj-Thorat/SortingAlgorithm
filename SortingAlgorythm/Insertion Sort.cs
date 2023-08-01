@@ -32,7 +32,7 @@ namespace SortingAlgorythm
                 Console.Write(i + " ");
 
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
         }
     }

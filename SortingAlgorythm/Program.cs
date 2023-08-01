@@ -13,6 +13,8 @@ namespace SortingAlgorithm
         {
             int[] array = { 64, 34, 25, 12, 22, 11, 13, 14, 15 };
 
+
+            //for insertion sort
             Insertion_Sort sort = new Insertion_Sort();
             Console.WriteLine("Before Sorting");
             sort.PrintArray(array);
@@ -20,6 +22,19 @@ namespace SortingAlgorithm
             sort.InsertionSort(array);
             Console.WriteLine("After sorting");
             sort.PrintArray(array);
+
+
+            // for bubble sort 
+            BubbleSort sort1 = new BubbleSort();
+            int[] arr = { 64, 34, 25, 12, 22, 11, 13, 14, 15 };
+
+            Console.WriteLine("\nBefore Bubble sort");
+            sort1.printArray(arr);
+
+            sort1.bubbleSort(arr);
+            Console.WriteLine("\nAfter Bubble sort");
+            sort1.printArray(arr);
+
         }
 
        
